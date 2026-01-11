@@ -3,131 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COREWEAVER_LABS | Sovereign Compute Infrastructure & Neural Estate Analytics</title>
-    
-    <meta name="keywords" content="GPU Orchestration, H100 Cluster Topology, Latency Arbitrage, Neural Weight Sovereignty, Silicon Continuity">
-
+    <title>MONUMENT_OPERON | Sovereign Forensic Intelligence</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono&family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,900&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&family=JetBrains+Mono:wght@500;800&display=swap" rel="stylesheet">
-    
     <style>
-        :root { --slate-950: #020617; --cyan-600: #0891b2; }
-        body { background-color: var(--slate-950); color: #94a3b8; font-family: 'Inter', sans-serif; letter-spacing: -0.01em; }
-        .mono { font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; }
-        .h-text { color: #ffffff; font-weight: 800; letter-spacing: -0.05em; }
-        .cluster-node { border: 1px solid rgba(8, 145, 178, 0.1); background: rgba(15, 23, 42, 0.6); backdrop-filter: blur(12px); transition: all 0.4s ease; }
-        .cluster-node:hover { border-color: var(--cyan-600); box-shadow: 0 0 30px rgba(8, 145, 178, 0.1); }
-        @keyframes ticker { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
-        .animate-ticker { animation: ticker 30s linear infinite; }
+        :root { --emerald: #10b981; --zinc-950: #020617; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--zinc-950); color: #94a3b8; }
+        .mono { font-family: 'JetBrains Mono', monospace; }
+        .serif { font-family: 'Fraunces', serif; }
+        .bg-grid { background-image: radial-gradient(circle, #1e293b 1px, transparent 1px); background-size: 40px 40px; }
+        .h-text { color: #fff; font-weight: 800; letter-spacing: -0.04em; }
+        .promoter-glow { box-shadow: 0 0 50px rgba(16, 185, 129, 0.05); border: 1px solid rgba(16, 185, 129, 0.1); }
+        .scanner::after {
+            content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 1px;
+            background: linear-gradient(to right, transparent, var(--emerald), transparent);
+            animation: scan 4s linear infinite;
+        }
+        @keyframes scan { 0% { top: 0; } 100% { top: 100%; } }
+        .stat-card { background: rgba(15, 23, 42, 0.8); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.05); transition: all 0.3s ease; }
+        .stat-card:hover { border-color: var(--emerald); }
     </style>
 </head>
-<body class="antialiased selection:bg-cyan-600/30">
+<body class="bg-grid antialiased">
 
-    <div class="fixed top-0 w-full z-[100] bg-zinc-950 text-cyan-800 py-1.5 overflow-hidden border-b border-white/5 mono uppercase font-black italic tracking-widest">
-        <div class="flex whitespace-nowrap gap-16 animate-ticker">
-            <span>[ SYSTEM: OPERATIONAL ]</span>
-            <span>[ COMPUTE_YIELD: 99.98% ]</span>
-            <span>[ NODE_LOCATION: DISTRIBUTED_REDUNDANCY ]</span>
-            <span>[ PROTOCOL: CW-LITEPATH_v4 ]</span>
-            <span>[ ASSET_CLASS: NEURAL_CAPITAL ]</span>
-            <span>[ LATENCY: 0.04ms_LOCAL_CORE ]</span>
-            <span>[ SYSTEM: OPERATIONAL ]</span>
-        </div>
-    </div>
-
-    <nav class="fixed top-10 w-full z-50 px-6">
-        <div class="max-w-7xl mx-auto h-16 border border-white/5 bg-slate-950/90 backdrop-blur-xl flex items-center justify-between px-10">
-            <div class="flex items-center gap-4">
-                <div class="w-6 h-6 bg-cyan-600 flex items-center justify-center text-white font-black italic">C</div>
-                <span class="h-text text-[10px] uppercase tracking-[0.4em]">CoreWeaver Labs // 026</span>
+    <nav class="fixed w-full z-50 border-b border-white/5 bg-[#020617]/95 backdrop-blur-xl">
+        <div class="max-w-[1600px] mx-auto px-8 h-24 flex items-center justify-between">
+            <div class="flex items-center gap-6">
+                <div class="w-12 h-12 border border-emerald-500/50 flex items-center justify-center rounded-sm">
+                    <span class="text-emerald-500 serif italic font-black text-2xl">M</span>
+                </div>
+                <div class="leading-none">
+                    <h1 class="text-white font-black text-xl tracking-tighter uppercase">Monument_Operon</h1>
+                    <p class="text-[9px] text-emerald-500 mono tracking-[0.4em] uppercase mt-1">Sovereign_OS v3.0</p>
+                </div>
             </div>
-            <div class="hidden md:flex gap-12 mono uppercase font-bold text-zinc-500">
-                <a href="#topology" class="hover:text-white transition">Topology</a>
-                <a href="#foundry" class="hover:text-white transition">Foundry</a>
-                <a href="#terminal" class="bg-cyan-600 text-white px-5 py-2 hover:bg-cyan-500 transition">Terminal_Auth</a>
+            <div class="hidden xl:flex gap-12 text-[10px] mono uppercase tracking-[0.2em] font-bold text-slate-500">
+                <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span> Helsinki_Node: Secure</span>
+                <span class="hover:text-emerald-400 cursor-pointer transition-colors">Thermodynamic_Audit</span>
+                <span class="hover:text-emerald-400 cursor-pointer transition-colors">Chain_of_Custody</span>
             </div>
+            <button class="bg-emerald-600 hover:bg-emerald-500 text-white px-8 py-3 rounded-sm text-[10px] font-black mono uppercase tracking-[0.2em] transition-all shadow-lg shadow-emerald-900/20">
+                Initialize_Enrollment
+            </button>
         </div>
     </nav>
 
-    <header class="pt-64 pb-32 px-10 border-b border-white/5">
-        <div class="max-w-7xl mx-auto">
-            <div class="max-w-4xl space-y-12">
-                <div class="inline-flex items-center gap-3 px-3 py-1 bg-cyan-500/5 border border-cyan-500/10">
-                    <span class="text-[9px] mono uppercase text-cyan-500 font-bold tracking-[0.4em]">High-Density Orchestration Layer</span>
-                </div>
-                <h1 class="text-7xl md:text-9xl h-text leading-[0.8] tracking-tighter">
-                    Sovereign <br/> Compute <br/> <span class="text-cyan-600 italic">Estate.</span>
-                </h1>
-                <p class="text-xl text-slate-400 leading-relaxed font-light border-l-2 border-cyan-600 pl-10 max-w-2xl">
-                    CoreWeaver Labs architects the physical and logical layers of the **Neural Capital Estate**. Through stochastic resource allocation and custom silicon continuity, we provide **Deterministic Scalability** for institutional-grade intelligence.
-                </p>
-                <div class="flex gap-4 pt-6">
-                    <button class="bg-white text-black px-10 py-5 text-[10px] mono font-black uppercase tracking-widest hover:bg-cyan-600 hover:text-white transition-all">Download Infrastructure Audit</button>
-                    <button class="border border-zinc-800 text-white px-10 py-5 text-[10px] mono font-black uppercase tracking-widest hover:border-zinc-500 transition-all">Initialize Mesh</button>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <section id="topology" class="py-40 bg-slate-950/50">
-        <div class="max-w-7xl mx-auto px-10 grid lg:grid-cols-3 gap-8">
+    <main class="pt-56 pb-20 px-8">
+        <div class="max-w-[1500px] mx-auto grid lg:grid-cols-12 gap-24 items-start">
             
-            <div class="cluster-node p-12 space-y-8 rounded-sm">
-                <div class="flex justify-between items-start">
-                    <i data-lucide="cpu" class="text-cyan-600 w-8 h-8"></i>
-                    <span class="mono text-[8px] font-black uppercase text-zinc-600">Module: Orion</span>
+            <div class="lg:col-span-7 space-y-12">
+                <div class="inline-flex items-center gap-3 px-4 py-1 rounded border border-emerald-500/20 bg-emerald-500/5">
+                    <i data-lucide="award" class="w-4 h-4 text-emerald-500"></i>
+                    <span class="text-[10px] mono uppercase text-emerald-400 font-bold tracking-[0.3em]">Institutional Fiduciary Framework</span>
                 </div>
-                <h3 class="h-text text-xl uppercase italic tracking-tighter">GPU <br/> Topology.</h3>
-                <p class="text-sm text-slate-500 leading-relaxed">
-                    Cold-swappable H100/B200 clusters engineered for perpetual uptime. Our orchestration engine mitigates thermal drift and maximizes FLOPS-per-watt across distributed jurisdictions.
+                <h2 class="text-8xl h-text serif italic leading-[0.85]">
+                    The Mastery of <br>
+                    <span class="text-emerald-500 italic">Biological Proof.</span>
+                </h2>
+                <p class="text-2xl text-slate-400 leading-relaxed font-light max-w-2xl border-l border-emerald-500/30 pl-10">
+                    Monument_Operon provides the analytical infrastructure to quantify the thermodynamic integrity of the **Human Capital Estate**. By integrating forensic bio-intelligence with rigorous fiduciary standards, we remediate biological error into admissible institutional assets.
                 </p>
+                <div class="flex gap-6">
+                    <button class="bg-white text-black hover:bg-emerald-500 hover:text-white px-10 py-5 font-black mono uppercase text-[10px] tracking-widest transition-all">Download Statutory Brief</button>
+                    <button class="border border-slate-700 hover:border-emerald-500 px-10 py-5 font-black mono uppercase text-[10px] tracking-widest text-white transition-all">Audit VDR Data</button>
+                </div>
             </div>
 
-            <div class="cluster-node p-12 space-y-8 rounded-sm">
-                <div class="flex justify-between items-start">
-                    <i data-lucide="layers" class="text-cyan-600 w-8 h-8"></i>
-                    <span class="mono text-[8px] font-black uppercase text-zinc-600">Module: Synthesis</span>
-                </div>
-                <h3 class="h-text text-xl uppercase italic tracking-tighter">Custom <br/> Silicon.</h3>
-                <p class="text-sm text-slate-500 leading-relaxed">
-                    Rapid prototyping of FPGA and ASIC-based accelerators. We stabilize the physical compute foundation to ensure sub-millisecond inference for high-frequency neural estates.
-                </p>
-            </div>
+            <div class="lg:col-span-5">
+                <div class="stat-card rounded-sm overflow-hidden promoter-glow relative scanner">
+                    <div class="bg-white/5 px-6 py-4 flex items-center justify-between border-b border-white/5">
+                        <span class="mono text-[10px] text-emerald-500 uppercase font-bold tracking-widest">Live_Audit // Metabolic_Scan</span>
+                        <div class="flex gap-2 text-emerald-500">
+                            <i data-lucide="radio" class="w-3 h-3 animate-pulse"></i>
+                        </div>
+                    </div>
+                    <div class="p-8 space-y-8">
+                        <div class="bg-black/50 p-6 border border-emerald-500/10 rounded-sm">
+                            <div class="flex justify-between items-center mb-6">
+                                <span class="text-[10px] mono text-emerald-500 font-black tracking-widest uppercase">Mitochondrial_Continuity</span>
+                                <span class="text-[9px] px-3 py-1 bg-emerald-500/10 text-emerald-500 border border-emerald-500/20 font-bold">STATUS: OPTIMIZED</span>
+                            </div>
+                            
+                            
+                            
+                            <div class="grid grid-cols-2 gap-8 mt-6 mono text-[11px]">
+                                <div>
+                                    <span class="text-slate-600 uppercase block mb-1 tracking-tighter">Resilience_Coefficient</span>
+                                    <span class="text-white text-lg font-bold">0.942_RC</span>
+                                </div>
+                                <div class="border-l border-white/5 pl-6">
+                                    <span class="text-slate-600 uppercase block mb-1 tracking-tighter">Entropic_Drift</span>
+                                    <span class="text-emerald-500 font-bold tracking-tighter">NEG_STOCHASTIC</span>
+                                </div>
+                            </div>
+                        </div>
 
-            <div class="cluster-node p-12 space-y-8 rounded-sm">
-                <div class="flex justify-between items-start">
-                    <i data-lucide="shield-check" class="text-cyan-600 w-8 h-8"></i>
-                    <span class="mono text-[8px] font-black uppercase text-zinc-600">Module: Fiduciary</span>
+                        <div class="flex items-center gap-4 bg-emerald-500/5 p-4 rounded-sm border border-emerald-500/10 italic text-[11px]">
+                            <span class="text-emerald-500 font-black">REPRESSOR:</span>
+                            <span class="text-slate-300">"Thermodynamic leakage identified at IMM Complex IV. Deploying Katin synthesis protocol ML-024 for immediate hardware remediation."</span>
+                        </div>
+                    </div>
                 </div>
-                <h3 class="h-text text-xl uppercase italic tracking-tighter">Weight <br/> Sovereignty.</h3>
-                <p class="text-sm text-slate-500 leading-relaxed">
-                    Fiduciary management of model weights. Using encrypted TEE (Trusted Execution Environments), we ensure your intelligence remains a sovereign, auditable asset.
-                </p>
             </div>
+        </div>
+    </main>
 
+    <section class="max-w-[1500px] mx-auto px-8 py-32 border-t border-white/5">
+        <div class="grid md:grid-cols-4 gap-12">
+            <div class="stat-card p-10 space-y-6">
+                <i data-lucide="microscope" class="text-emerald-500 w-8 h-8"></i>
+                <h3 class="text-white font-black mono text-xs uppercase tracking-[0.2em]">Forensic_Norvoc</h3>
+                <p class="text-[11px] leading-relaxed text-slate-500 font-medium">Stochastic error detection targeting mitochondrial DNA drift. Admissible biological intelligence for the Human Capital Estate.</p>
+                
+            </div>
+            <div class="stat-card p-10 space-y-6">
+                <i data-lucide="atom" class="text-emerald-500 w-8 h-8"></i>
+                <h3 class="text-white font-black mono text-xs uppercase tracking-[0.2em]">Katin_Foundry</h3>
+                <p class="text-[11px] leading-relaxed text-slate-500 font-medium">Vertical integration of molecular synthesis. Stabilizing the Inner Mitochondrial Membrane at the hardware origin.</p>
+                
+            </div>
+            <div class="stat-card p-10 space-y-6">
+                <i data-lucide="shield-half" class="text-emerald-500 w-8 h-8"></i>
+                <h3 class="text-white font-black mono text-xs uppercase tracking-[0.2em]">Helsinki_Trust</h3>
+                <p class="text-[11px] leading-relaxed text-slate-500 font-medium">Jurisdictional arbitrage across EU-sovereign nodes. Absolute data permanence and fiduciary continuity.</p>
+                
+            </div>
+            <div class="stat-card p-10 space-y-6">
+                <i data-lucide="gavel" class="text-emerald-500 w-8 h-8"></i>
+                <h3 class="text-white font-black mono text-xs uppercase tracking-[0.2em]">Repressor_Agent</h3>
+                <p class="text-[11px] leading-relaxed text-slate-500 font-medium">Adversarial AI auditing ensures all biological reporting is resilient to hostile cross-examination and market scrutiny.</p>
+            </div>
         </div>
     </section>
 
-    <section id="terminal" class="py-56 bg-zinc-950 border-y border-white/5">
-        <div class="max-w-2xl mx-auto text-center space-y-12 px-6">
-            <h2 class="text-6xl h-text tracking-tighter uppercase leading-none">Access <br/> Central <br/> Control.</h2>
-            <div class="cluster-node p-12 rounded-sm border border-cyan-600/20">
-                <p class="mono text-[9px] text-zinc-600 uppercase mb-10 tracking-[0.5em] font-black italic">Institutional Key Exchange // RSA-4096</p>
-                <div class="space-y-4">
-                    <input type="password" placeholder="ENTER_PRIVATE_ACCESS_KEY" class="w-full bg-black border border-zinc-800 p-5 text-[10px] mono text-white outline-none focus:border-cyan-600 transition-all text-center">
-                    <button class="w-full bg-cyan-600 text-white py-6 mono text-[10px] font-black uppercase tracking-widest hover:bg-cyan-700 transition-all">Establish Secure Link</button>
-                </div>
-            </div>
+    <footer class="py-24 border-t border-white/5 text-center">
+        <div class="flex justify-center gap-12 mb-8 opacity-20">
+            <i data-lucide="binary" class="w-4 h-4 text-emerald-500"></i>
+            <i data-lucide="database" class="w-4 h-4 text-emerald-500"></i>
+            <i data-lucide="fingerprint" class="w-4 h-4 text-emerald-500"></i>
         </div>
-    </section>
-
-    <footer class="py-24 text-center mono">
-        <p class="text-[9px] text-zinc-800 tracking-[0.8em] font-black uppercase">
-            CoreWeaver Labs OS // V.026 // Distributed Node Network // Helsinki // Singapore // SF
+        <p class="text-[10px] text-slate-800 tracking-[0.8em] uppercase font-black">
+            Monument Operon Systems // Helsinki // Singapore // Cambridge
         </p>
     </footer>
 
-    <script>lucide.createIcons();</script>
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 </html>
