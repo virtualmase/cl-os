@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MONUMENT_OPERON | Autonomous Digital Municipality</title>
+    <title>MONUMENT_OPERON | Global Digital Municipality</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600;900&family=JetBrains+Mono&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -14,123 +14,157 @@
         .h-text { color: #fff; font-weight: 900; letter-spacing: -0.05em; }
         .cause-gradient { background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .glass-card { background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.08); transition: all 0.4s ease; }
+        .dimension-grid { border: 1px solid rgba(16, 185, 129, 0.1); background-image: radial-gradient(circle, #1e293b 1px, transparent 1px); background-size: 30px 30px; }
+        .virtue-tag { font-size: 9px; font-weight: 900; padding: 2px 8px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.1em; }
     </style>
 </head>
-<body class="antialiased">
+<body class="antialiased selection:bg-blue-500/30">
 
-    <nav class="fixed w-full z-50 border-b border-white/5 bg-black/80 backdrop-blur-xl">
+    <nav class="fixed w-full z-50 border-b border-white/5 bg-black/90 backdrop-blur-xl">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <div class="flex items-center gap-4">
-                <i data-lucide="layout-grid" class="text-emerald-500 w-8 h-8"></i>
+                <div class="w-10 h-10 bg-gradient-to-br from-blue-600 to-emerald-500 rounded-lg flex items-center justify-center">
+                    <i data-lucide="network" class="text-white w-6 h-6"></i>
+                </div>
                 <div class="leading-none">
                     <h1 class="text-white font-black text-lg tracking-tighter uppercase">Monument_Operon</h1>
-                    <p class="text-[9px] text-emerald-500 mono tracking-[0.4em] uppercase mt-1">Autonomous Digital Municipality</p>
+                    <p class="text-[9px] text-emerald-500 mono tracking-[0.4em] uppercase mt-1">Sovereign 8D Infrastructure</p>
                 </div>
             </div>
-            <div class="hidden md:flex gap-10 text-[10px] mono uppercase tracking-[0.2em] font-bold text-slate-500">
-                <a href="#3D" class="hover:text-white transition">3D_Integration</a>
-                <a href="#5D" class="hover:text-white transition">5D_Governance</a>
-                <a href="#8D" class="hover:text-white transition">8D_Scalability</a>
+            <div class="hidden lg:flex gap-10 text-[10px] mono uppercase tracking-[0.2em] font-bold text-slate-500">
+                <a href="#3d" class="hover:text-white transition">3D_Physical</a>
+                <a href="#5d" class="hover:text-white transition">5D_Governance</a>
+                <a href="#8d" class="hover:text-white transition">8D_Scalability</a>
             </div>
-            <button class="bg-emerald-600 hover:bg-emerald-500 text-white px-6 py-2.5 rounded-full text-[10px] font-black mono uppercase tracking-widest transition-all">
-                Enter Ecosystem
-            </button>
+            <div class="flex gap-4">
+                <button class="border border-white/10 px-6 py-2 rounded-full text-[10px] font-black mono uppercase tracking-widest text-white">Node_Login</button>
+                <button class="bg-blue-600 hover:bg-emerald-500 text-white px-6 py-2 rounded-full text-[10px] font-black mono uppercase tracking-widest transition-all">Enroll</button>
+            </div>
         </div>
     </nav>
 
     <header class="pt-56 pb-32 px-6">
-        <div class="max-w-7xl mx-auto text-center space-y-12">
-            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10">
-                <span class="text-[10px] mono uppercase text-emerald-400 font-bold tracking-widest italic">A Permissionless & Borderless Vision</span>
-            </div>
-            <h1 class="text-8xl h-text leading-none">
-                Innovation for the <br/> <span class="cause-gradient italic underline decoration-blue-500/30">Other 80%</span>
-            </h1>
-            <p class="text-2xl text-slate-400 leading-relaxed max-w-3xl mx-auto font-light">
-                Bridging the gap where **80% of advancement** remains locked in high-resource regions. We unify **blockchain**, **IoT**, and **noncommercial data** to empower global health and climate resilience[cite: 6, 24].
-            </p>
-        </div>
-    </header>
-
-    <section class="py-20 px-6 bg-white/[0.01]">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-center mb-16 text-slate-500 mono text-xs uppercase tracking-[0.5em]">The 13 Operationalized Virtues</h2>
-            <div class="grid md:grid-cols-4 gap-4">
-                <div class="glass-card p-6 rounded-2xl">
-                    <h4 class="text-emerald-500 mono text-xs mb-4">VIGILANCE & PROTECTION</h4>
-                    <p class="text-sm text-slate-400">Powering IoT-based anomaly detection and differential privacy for secure innovation[cite: 83, 84, 85].</p>
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+            <div class="space-y-8">
+                <div class="inline-flex items-center gap-3">
+                    <span class="virtue-tag bg-emerald-500/10 text-emerald-500 border border-emerald-500/20">Vigilance</span>
+                    <span class="virtue-tag bg-blue-500/10 text-blue-500 border border-blue-500/20">Faith</span>
                 </div>
-                <div class="glass-card p-6 rounded-2xl">
-                    <h4 class="text-blue-500 mono text-xs mb-4">FEARLESSNESS & FEROCITY</h4>
-                    <p class="text-sm text-slate-400">Driving hackathons with $50,000 grants and blockchain-incentivized challenges[cite: 91, 92, 94].</p>
-                </div>
-                <div class="glass-card p-6 rounded-2xl">
-                    <h4 class="text-emerald-500 mono text-xs mb-4">FAITH & WISDOM</h4>
-                    <p class="text-sm text-slate-400">Building trust via immutable blockchain logs and 95% ethical compliance[cite: 96, 97, 98].</p>
-                </div>
-                <div class="glass-card p-6 rounded-2xl">
-                    <h4 class="text-blue-500 mono text-xs mb-4">VISION & MATURITY</h4>
-                    <p class="text-sm text-slate-400">Guiding our 2030 roadmap to support 100,000 sovereign users globally[cite: 104, 107].</p>
+                <h1 class="text-8xl h-text leading-[0.9]">
+                    The End of <br/> <span class="cause-gradient italic">Resource Inequality.</span>
+                </h1>
+                <p class="text-xl text-slate-400 leading-relaxed font-light">
+                    An autonomous, borderless municipality integrating **3D-5D-8D dimensions** to democratize noncommercial innovation. We serve the **80% of humanity** currently locked out of mission-critical technological advancement.
+                </p>
+                <div class="flex gap-4">
+                    <button class="bg-white text-black px-8 py-4 rounded-xl font-black mono text-[10px] tracking-widest uppercase">Explore Roadmap</button>
+                    <button class="glass-card text-white px-8 py-4 rounded-xl font-black mono text-[10px] tracking-widest uppercase">Whitepaper</button>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section id="3D" class="py-40 px-6">
-        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-24 items-center">
-            <div class="space-y-10">
-                <span class="mono text-emerald-500 font-black tracking-[0.4em] uppercase text-[10px]">Ecosystem Architecture</span>
-                <h2 class="text-6xl h-text tracking-tighter uppercase">Unified <br/> Dimensions.</h2>
-                <div class="space-y-6">
-                    <div class="border-l-2 border-emerald-500 pl-6">
-                        <h5 class="text-white font-bold uppercase text-sm mb-2">3D: Physical-Digital Integration</h5>
-                        <p class="text-sm text-slate-400 leading-relaxed">Connecting **IoT sensors** to **data lakes** for real-time mission-critical feedback[cite: 27, 65].</p>
-                    </div>
-                    <div class="border-l-2 border-blue-500 pl-6">
-                        <h5 class="text-white font-bold uppercase text-sm mb-2">5D: Governance & Ethics</h5>
-                        <p class="text-sm text-slate-400 leading-relaxed">Decentralized decision-making via **Smart Contracts** and **Quadratic Voting**[cite: 28, 57].</p>
-                    </div>
-                    <div class="border-l-2 border-emerald-500 pl-6">
-                        <h5 class="text-white font-bold uppercase text-sm mb-2">8D: Scalability & Inclusivity</h5>
-                        <p class="text-sm text-slate-400 leading-relaxed">Multilingual interfaces and **emergent intelligence** to adapt across 70 regions[cite: 29, 78, 79].</p>
-                    </div>
-                </div>
-            </div>
-            <div class="glass-card p-4 rounded-3xl">
+            <div class="relative">
                 
             </div>
         </div>
-    </section>
+    </header>
 
-    <section class="py-20 border-y border-white/5">
-        <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
-            <div>
-                <p class="text-[10px] mono text-emerald-500 mb-2 uppercase">Cost Reduction</p>
-                <p class="text-5xl h-text tracking-tighter">25%</p>
-                <p class="text-[9px] text-slate-600 mt-2 uppercase"></p>
+    <section id="8d" class="py-32 px-6 dimension-grid border-y border-white/5">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-20 space-y-4">
+                <h2 class="text-5xl h-text uppercase">A Multidimensional <br/> Ecosystem.</h2>
+                <p class="text-slate-500 mono text-xs tracking-[0.4em]">Guided by 13 Operational Virtues</p>
             </div>
-            <div>
-                <p class="text-[10px] mono text-blue-500 mb-2 uppercase">Ethical Compliance</p>
-                <p class="text-5xl h-text tracking-tighter">95%</p>
-                <p class="text-[9px] text-slate-600 mt-2 uppercase"></p>
-            </div>
-            <div>
-                <p class="text-[10px] mono text-emerald-500 mb-2 uppercase">Regions Supported</p>
-                <p class="text-5xl h-text tracking-tighter">70</p>
-                <p class="text-[9px] text-slate-600 mt-2 uppercase">[cite: 9, 126]</p>
-            </div>
-            <div>
-                <p class="text-[10px] mono text-blue-500 mb-2 uppercase">Ecosystem Users</p>
-                <p class="text-5xl h-text tracking-tighter">20K</p>
-                <p class="text-[9px] text-slate-600 mt-2 uppercase">[cite: 9, 126]</p>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                <div class="glass-card p-10 rounded-3xl space-y-6">
+                    <div class="w-12 h-12 rounded-full bg-emerald-500/10 flex items-center justify-center text-emerald-500">
+                        <i data-lucide="cpu"></i>
+                    </div>
+                    <h3 class="text-xl font-black text-white">3D: Physical Integration</h3>
+                    <p class="text-sm leading-relaxed text-slate-400">
+                        Real-time **IoT observability** bridging physical stressors with digital forensics. We deploy mission-critical biological telemetry to ensure **99% uptime** for human capital.
+                    </p>
+                    <ul class="space-y-2 text-[10px] mono text-emerald-500/60 font-bold uppercase">
+                        <li>• Edge Computing</li>
+                        <li>• Low-Latency Hubs</li>
+                    </ul>
+                </div>
+
+                <div class="glass-card p-10 rounded-3xl space-y-6">
+                    <div class="w-12 h-12 rounded-full bg-blue-500/10 flex items-center justify-center text-blue-500">
+                        <i data-lucide="shield-check"></i>
+                    </div>
+                    <h3 class="text-xl font-black text-white">5D: Ethical Governance</h3>
+                    <p class="text-sm leading-relaxed text-slate-400">
+                        Blockchain-secured **permissionless voting** and immutable audit logs. Automated standards ensure **95% ethical compliance** across all 70 regions.
+                    </p>
+                    <ul class="space-y-2 text-[10px] mono text-blue-500/60 font-bold uppercase">
+                        <li>• Quadratic Voting</li>
+                        <li>• Smart Contract Bylaws</li>
+                    </ul>
+                </div>
+
+                <div class="glass-card p-10 rounded-3xl space-y-6">
+                    <div class="w-12 h-12 rounded-full bg-purple-500/10 flex items-center justify-center text-purple-500">
+                        <i data-lucide="globe"></i>
+                    </div>
+                    <h3 class="text-xl font-black text-white">8D: Cultural Inclusivity</h3>
+                    <p class="text-sm leading-relaxed text-slate-400">
+                        Multilingual AI interfaces and adaptive scaling for **70 global regions**. We eliminate the "Entropy Tax" through localized, inclusive synthesis nodes.
+                    </p>
+                    <ul class="space-y-2 text-[10px] mono text-purple-500/60 font-bold uppercase">
+                        <li>• Multimodal Synthesis</li>
+                        <li>• Noncommercial Data Exchange</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer class="py-24 text-center">
-        <p class="text-[10px] mono text-slate-700 uppercase tracking-[0.5em]">
-            Noncommercial Innovation // FAIR Principles // 2026
-        </p>
+    <section class="py-40 px-6 bg-white/[0.01]">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-24 items-center">
+            <div class="glass-card p-8 rounded-3xl">
+                
+            </div>
+            <div class="space-y-12">
+                <h2 class="text-6xl h-text leading-none uppercase">Validated <br/> Resilience.</h2>
+                <div class="grid grid-cols-2 gap-8">
+                    <div>
+                        <p class="text-4xl font-black text-emerald-500">25%</p>
+                        <p class="text-[10px] mono uppercase tracking-widest text-slate-500 mt-2">Cost Reduction in Ops</p>
+                    </div>
+                    <div>
+                        <p class="text-4xl font-black text-blue-500">20K+</p>
+                        <p class="text-[10px] mono uppercase tracking-widest text-slate-500 mt-2">Active Municipality Users</p>
+                    </div>
+                    <div>
+                        <p class="text-4xl font-black text-emerald-500">95%</p>
+                        <p class="text-[10px] mono uppercase tracking-widest text-slate-500 mt-2">Ethical Compliance Rate</p>
+                    </div>
+                    <div>
+                        <p class="text-4xl font-black text-blue-500">6K</p>
+                        <p class="text-[10px] mono uppercase tracking-widest text-slate-500 mt-2">Empowered Small Businesses</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-24 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col items-center gap-12">
+            <div class="flex items-center gap-4">
+                <i data-lucide="globe" class="text-emerald-500 w-6 h-6"></i>
+                <span class="text-white font-black text-xs uppercase tracking-[0.5em]">Monument_Operon // Autonomous Municipality</span>
+            </div>
+            <div class="flex flex-wrap justify-center gap-8 text-[9px] mono uppercase font-bold text-slate-700 tracking-[0.2em]">
+                <span>Permissionless_API</span>
+                <span>Helsinki_Accord_8D</span>
+                <span>FAIR_Data_Compliance</span>
+                <span>Open_Source_Municipality</span>
+            </div>
+            <p class="text-[9px] text-slate-800 tracking-[0.8em] uppercase font-black">
+                A Permanent Infrastructure for Planetary Equity // MMXXVI
+            </p>
+        </div>
     </footer>
 
     <script>lucide.createIcons();</script>
